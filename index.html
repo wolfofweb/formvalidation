@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <title>Course Form</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Course Form</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="https://github.com/wolfofweb"
+                  target="_blank"
+                  >My Github</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Social
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.instagram.com/wow_its_surya/"
+                      target="_blank"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.linkedin.com/in/suryadharmakrishnan/"
+                      target="_blank"
+                      >LinkedIn</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://wolfofweb.github.io/portfolio/"
+                      target="_blank"
+                      >Portfolio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="main container-fluid">
+      <div class="left col-sm-12 col-md-6"></div>
+      <div class="right p-5 col-sm-12 col-md-6">
+        <form action="connect.php" method="post">
+          <div class="ps-3 row mb-3 display-6">Register here!</div>
+          <div class="row mb-3">
+            <div class="form-floating col-6">
+              <input
+                type="name"
+                class="form-control"
+                id="fname"
+                name="fname"
+                placeholder="First Name"
+                required
+              />
+              <label for="fname" class="ps-4">First Name</label>
+            </div>
+            <div class="form-floating col-6">
+              <input
+                type="name"
+                class="form-control"
+                id="lname"
+                name="lname"
+                placeholder="Last Name"
+                required
+              />
+              <label for="lname" class="ps-4">Last Name</label>
+            </div>
+            <div class="row">
+              <span class="alert alert-danger lname m-2"></span>
+            </div>
+          </div>
+          <div class="ps-2 row mb-3">
+            <div class="form-label" for="gender">Gender</div>
+            <div class="gender">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  value="male"
+                  checked
+                />
+                <label class="form-check-label" for="male"> Male </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="female"
+                />
+                <label class="form-check-label" for="female"> Female </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="others"
+                  value="others"
+                />
+                <label class="form-check-label" for="others"> Others </label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="form-floating col-6">
+              <input
+                type="Date"
+                class="form-control"
+                id="dob"
+                name="dob"
+                required
+              />
+              <label for="dob" class="ps-4">Date of Birth</label>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <select class="form-select" id="passedOut" name="passedOut">
+                  <option id="2022" value="2022" selected>2022</option>
+                  <option id="2021" value="2021">2021</option>
+                  <option id="2020" value="2020">2020</option>
+                  <option id="2019" value="2019">2019</option>
+                  <option id="2018" value="2018">2018</option>
+                  <option id="2017" value="2017">2017</option>
+                  <option id="2016" value="2016">2016</option>
+                  <option id="2015" value="2015">2015</option>
+                  <option id="2014" value="2014">2014</option>
+                  <option id="2013" value="2013">2013</option>
+                  <option id="2012" value="2012">2012</option>
+                  <option id="2011" value="2011">2011</option>
+                  <option id="lessThan2011" name="year" value="less than 2011">
+                    &#60; 2011
+                  </option>
+                </select>
+                <label for="passedOut" class="form-label"
+                  >Year of passing</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email ID"
+                required
+              />
+              <label for="email" class="ps-4">E Mail ID</label>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="form-floating">
+              <input
+                type="tel"
+                class="form-control"
+                id="mobile"
+                name="mobile"
+                placeholder="Mobile No."
+                required
+              />
+              <label for="mobile" class="ps-4">Mobile No.</label>
+            </div>
+            <div class="row">
+              <span class="alert alert-danger mobile m-2"></span>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="form-floating">
+              <select class="form-select" id="course" name="course">
+                <option selected value="Web Development" id="webDev">
+                  Web Development
+                </option>
+                <option value="Web Dev with React" id="webReact">
+                  Web Dev with React
+                </option>
+                <option value="Web dev with Angular" id="webAngular">
+                  Web Dev with Angular
+                </option>
+                <option value="Python" id="python">Python</option>
+                <option value="Java" id="java">Java</option>
+                <option value=".net" id="dotnet">.Net</option>
+                <option value="Salesforce" id="salesForce">Salesforce</option>
+                <option value="Machine Learning" id="machineLearning">
+                  Machine Learning
+                </option>
+                <option value="Flutter" id="flutter">Flutter</option>
+                <option value="AWS" id="aws">AWS</option>
+                <option value="Microsoft Azure" id="msAzure">
+                  Microsoft Azure
+                </option>
+                <option value="Devops" id="devops">Devops</option>
+                <option value="Big Data" id="BigData">Big Data</option>
+              </select>
+              <label for="course" class="form-label ps-4"
+                >Preferred course</label
+              >
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-6">
+              <div class="form-floating">
+                <select
+                  class="form-select"
+                  id="classPreference"
+                  name="classPreference"
+                >
+                  <option value="Mon to Fri session" id="weekDay" selected>
+                    Mon-Fri Session
+                  </option>
+                  <option value="Week end session" id="weekEnd">
+                    Week End Session
+                  </option>
+                </select>
+                <label for="classPreference" class="form-label"
+                  >Class preference</label
+                >
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-floating">
+                <select class="form-select" name="education" id="education">
+                  <option
+                    value="Bachelors in CS/IT"
+                    id="bachelorsInCsIt"
+                    selected
+                  >
+                    Bachelors in CS/IT
+                  </option>
+                  <option
+                    value="Bachelors in non CS/IT"
+                    id="bachelorsInNonCsIt"
+                  >
+                    Bachelors(Non-CS/IT)
+                  </option>
+                  <option value="Masters in CS/IT" id="mastersInCsIt">
+                    Masters in CS/IT
+                  </option>
+                  <option value="Masters in non CS/IT" id="mastersInNonCsIt">
+                    Masters(Non-CS/IT)
+                  </option>
+                  <option value="Diploma in CS/IT" id="diplomaInCsIT">
+                    Diploma in CS/IT
+                  </option>
+                  <option value="Diploma in non CS/IT" id="diplomaInNonCsIT">
+                    Diploma(Non-CS/IT)
+                  </option>
+                  <option value="Non Degree/Diploma" id="nonDegreeDiploma">
+                    Non-Degree/Diploma
+                  </option>
+                </select>
+                <label for="education" class="form-label"
+                  >Educational Background</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-12">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="I agree"
+                  id="terms"
+                  name="terms"
+                  required
+                />
+                <label class="form-check-label" for="terms">
+                  I Agree to submit my Personal data
+                </label>
+              </div>
+            </div>
+          </div>
+          <button
+            type="submit"
+            name="submit"
+            value="submit"
+            class="btn btn-primary btn-lg"
+          >
+            Submit
+          </button>
+          <button
+            type="button"
+            name="reset"
+            class="ms-2 btn btn-danger btn-lg"
+            onclick="resetValues()"
+          >
+            Reset
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="px-2 py-3">Made with ❤️ by Surya</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
